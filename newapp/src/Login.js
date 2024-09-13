@@ -1,33 +1,47 @@
 import React from 'react';
+import './Login.css';
 
 const Login = () => {
           return (
-                    <main className='login'>
-                              <div className='loginform'>
-
-                                        <input
-                                                  type='text'
-                                                  required
-                                                  placeholder='Enter the name:'
-                                                  autoFocus
-                                                  id='username'
-                                        />
-                                        <input
-                                                  type='email'
-                                                  placeholder='Enter the name:'
-                                                  required
-                                                  autoFocus
-                                                  id='email'
-                                        />
-
-                                        <button>Login</button>
-                                        <li><a href='#'>Forget password</a></li>
-                                        <li><a href='#'>Sign Up</a></li>
-
-
+                    <main className="login-container">
+                              <div className="login-form">
+                                        <form>
+                                                  <div className="form-group">
+                                                            <label htmlFor="username">UserName</label>
+                                                            <input
+                                                                      type="text"
+                                                                      required
+                                                                      placeholder="Enter your name"
+                                                                      autoFocus
+                                                                      id="username"
+                                                                      className="form-control"
+                                                            />
+                                                  </div>
+                                                  <div className="form-group">
+                                                            <label htmlFor="password">Password</label>
+                                                            <input
+                                                                      type="password"
+                                                                      required
+                                                                      placeholder="Enter your password"
+                                                                      id="password"
+                                                                      className="form-control"
+                                                            />
+                                                  </div>
+                                                  <button type="submit" className="btn btn-primary">
+                                                            Login
+                                                  </button>
+                                        </form>
+                                        <ul className="login-links">
+                                                  <li>
+                                                            <a href="#">Forget password</a>
+                                                  </li>
+                                                  <li>
+                                                            <a href="#">Sign Up</a>
+                                                  </li>
+                                        </ul>
                               </div>
                     </main>
           );
-}
+};
 
 export default Login;

@@ -1,0 +1,49 @@
+import React from 'react';
+import './Regsiter.css';
+const Register = () => {
+  return (
+    <main className="register">
+      <form className="register-form">
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+            autoFocus
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="tele">Phone</label>
+          <input
+            type="tel"
+            id="tele"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+
+        <div className="form-group checkbox-group">
+          <input type="checkbox" id="check" required />
+          <label htmlFor="check">I'm not a robot</label>
+        </div>
+
+        <button type="submit" className="btn">Sign-up</button>
+      </form>
+    </main>
+  );
+};
+
+export default Register;
