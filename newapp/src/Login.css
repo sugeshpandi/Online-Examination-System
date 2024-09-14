@@ -1,100 +1,65 @@
-/* Define color variables for consistency */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --background-color: #f8f9fa;
-  --form-bg-color: #ffffff;
-  --input-border-color: #ced4da;
-  --btn-hover-color: #0056b3;
-}
+/* reset */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+*,
+*::after,
+*::before {
   padding: 0;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   margin: 0;
+  box-sizing: border-box;
 }
 
+/* login containet */
 .login-container {
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-  background-color: var(--form-bg-color);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  
+  background-image: url(./Assests/Fingerprint-cuate\ \(1\).png);
+  background-size: 50%;
+  background-repeat: no-repeat;
 }
-
+/* login-form */
 .login-form {
-  display: flex;
-  flex-direction: column;
+  padding: 30px;
+  margin-left: 15rem;
+  box-shadow: 1px 1px 10px gray;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
+form{
+  padding: 10px;  
 }
-
-label {
+input{
   display: block;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: var(--secondary-color);
-}
-
-input[type="text"],
-input[type="password"] {
-  width: 100%;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid var(--input-border-color);
-  border-radius: 4px;
-  outline: none;
-  transition: border-color 0.3s ease;
+  margin: 10px 10px 10px 0;
 }
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: var(--primary-color);
+label{
+  font-size: large;
+  margin: 10px 0 10px 0;
 }
-
-button {
-  width: 100%;
+.btn{
   padding: 10px;
-  font-size: 16px;
-  background-color: var(--primary-color);
+  font-size: large;
+  background-color: rgba(0, 0, 255, 0.836);
   color: white;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin: 10px 0 0 4rem;
 }
-
-button:hover {
-  background-color: var(--btn-hover-color);
+.btn:hover{
+  background-color: blue;
 }
-
-.login-links {
-  margin-top: 1.5rem;
+.login-links{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  font-size: medium;
+  margin-top: 10px;
 }
-.login-links {
-  list-style: none;
-}
-.login-links a {
+a{
   text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.3s ease;
+  color: black;
 }
 
-.login-links a:hover {
-  color: var(--btn-hover-color);
+ul li{
+  list-style: none;
 }
