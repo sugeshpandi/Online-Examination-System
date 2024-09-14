@@ -13,20 +13,22 @@
   display: grid;
   place-content: center;
   height: 100vh;
-  
   background-image: url(./Assests/Fingerprint-cuate\ \(1\).png);
   background-size: 50%;
+  background-position-x: right;
+  background-color: aliceblue;
   background-repeat: no-repeat;
 }
 /* login-form */
 .login-form {
   padding: 30px;
-  margin-left: 15rem;
+  margin-right: 10rem;
+  background:none; 
   box-shadow: 1px 1px 10px gray;
 }
 
 form{
-  padding: 10px;  
+  padding: 10px; 
 }
 input{
   display: block;
@@ -48,6 +50,7 @@ label{
 }
 .btn:hover{
   background-color: blue;
+  
 }
 .login-links{
   display: flex;
@@ -62,4 +65,20 @@ a{
 
 ul li{
   list-style: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+ul li::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; 
+  width: 0; 
+  background-color: black; 
+  transition: width 0.3s ease-in-out;
+}
+ul li:hover::after {
+  width: 100%; 
+  
 }
