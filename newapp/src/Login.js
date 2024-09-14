@@ -33,7 +33,7 @@ const Login = () => {
                                         </form>
                                         <ul className="login-links">
                                                   <li>
-                                                            <a href="#">Forget password</a>
+                                                            <a href="#">Forget Password ?</a>
                                                   </li>
                                                   <li>
                                                             <a href="#">Sign Up</a>
