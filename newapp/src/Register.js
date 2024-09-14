@@ -4,6 +4,7 @@ const Register = () => {
   return (
     <main className="register">
       <form className="register-form">
+        <h1>Register</h1>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
