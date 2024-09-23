@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./Assests/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+  background-size: 100vw 100vh;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(0, 0, 255, 0.836);
+}
+li {
+  margin: 10px 10px 10px;
+}
+.button {
+  margin: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0.6em 1.2em;
+  background-color: rgba(255, 255, 255, 0.884);
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+}
+.logo {
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+.content {
+  font-size: 3.5rem;
+  color: white;
+  font-family: sans-serif;
+  display: grid;
+  text-shadow: #0000ffc2 1px 0 10px;
+  float: right;
+  place-content: center;
+  margin-top: 5rem;
+  width: 35rem;
+}

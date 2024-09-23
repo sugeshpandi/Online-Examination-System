@@ -33,10 +33,10 @@ const Login = () => {
                                                   </button>
                                         </form>
                                         <ul className="login-links">
-                                                  <li>
+                                                  <li className='tem'>
                                                             <a href="#">Forget Password ?</a>
                                                   </li>
-                                                  <li>
+                                                  <li className='tem'>
                                                             <a href="#">Sign Up</a>
                                                   </li>
                                         </ul>
